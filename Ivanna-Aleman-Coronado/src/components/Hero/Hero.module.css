@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 80px 120px clamp(80px, 15vw, 300px);
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.deco {
+    position: absolute;
+    font-family: var(--font-display);
+    font-size: var(--text-display-lg);
+    opacity: 70%;
+    pointer-events: none;
+    font-size: 18px;
+    user-select: none;
+    z-index: 0;
+}
+
+.deco1 { top: 12%; left: 53%; font-size: var(--text-display-lg); color: var(--deeper-ivanna-purple)}
+.deco2 { top: 25%; right: 50%; font-size: var(--text-display-lg); color: var(--ivanna-purple)}
+.deco3 { top: 30%; left: 75%; font-size: var(--text-display-lg); color: var(--ivanna-purple)}
+.deco4 { bottom: 50%; right: 23%; font-size: var(--text-display-lg); color: var(--ivanna-purple); transform: rotate(-50deg)}
+.deco5 { bottom: 40%; left: 85%; font-size: var(--text-display-lg); color: var(--ivanna-purple); transform: rotate(-50deg)}
+.deco6 { bottom: 30%; left: 47%; font-size: var(--text-display-lg); color: var(--deeper-ivanna-purple); transform: rotate(-40deg)}
+.deco7 { bottom: 20%; left: 45%; font-size: var(--text-display-lg); color: var(--deeper-ivanna-purple)}
+
+.heroImage {
+    width: 45%;
+    max-width: 450px;
+    height: auto;
+    box-shadow: -20px 20px 0px var(--purple-black);
+}
+
+.heroText {
+    flex: 1;
+}
+
+.heroText h2 {
+    color: var(--deeper-ivanna-purple);
+    font-family: var( --font-body);
+    font-size: var(--text-body-lg);
+}
+
+.heroText h1 {
+    color: var(--ivanna-purple);
+    font-family: var(--font-display);
+    font-size: var(--text-display-xl);
+}
+
+.heroButtons {
+    display: flex;
+    gap: 30px;
+}
+
+.heroButtons button {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 3px solid var(--ivanna-purple);
+  color: var(--ivanna-purple);
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.3s ease-in-out;
+            }
+
+.heroButtons button:hover {
+  background-color: var(--ivanna-purple);
+  color: var(--black);
+  box-shadow: 0 0 12px rgb(140, 110, 197);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        padding: 100px 40px 80px 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heroImage {
+        width: 60%;
+        max-width: 350px;
+        order: 2;
+    }
+
+    .heroText {
+        order: 1;
+        width: 100%;
+    }
+
+    .heroText h1 {
+        font-size: var(--text-display-lg);
+    }
+
+    .heroText h2 {
+        font-size: var(--text-body-md);
+    }
+
+    .heroButtons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+}

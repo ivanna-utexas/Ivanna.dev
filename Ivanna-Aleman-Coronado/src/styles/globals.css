@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+
+  /* transitions */
+  --transition-navbar: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Colors */
+  --black: #000000;
+  --grey: #404040;
+  --purple-black: #2E1B3B;
+  --ivanna-purple: #9671DA;
+  --deeper-ivanna-purple: #6042AE;
+  --white: #FFFFFF;
+  --light-ivanna-purple: #D2C3EE;
+  
+  /* Typography */
+  --font-display:  'Press Start 2P', monospace;
+  --font-body:     'Outfit', sans-serif;
+
+  /* Type scale */
+  --text-display-xl:  64px;
+  --text-display-lg:  32px;
+  --text-display-md:  20px;
+  --text-display-sm:  14px;
+
+  --text-body-lg:     24px;
+  --text-body-md:     18px;
+  --text-body-sm:     15px;
+  --text-tag:         14px;
+  --text-eyebrow:     13px;
+
+    /* Border radius */
+  --rounded-corners: 3px;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.pixelDots {
+  position: relative;
+}
+
+.pixelDots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--ivanna-purple) 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tags {
+  color: var(--light-ivanna-purple, #D2C3EE);
+  text-align: center;
+
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}

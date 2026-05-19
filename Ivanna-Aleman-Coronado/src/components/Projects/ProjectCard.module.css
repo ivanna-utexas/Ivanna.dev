@@ -1,0 +1,109 @@
+.card {
+    position: relative;
+    border-radius: 3px;
+    border: 3px solid var(--ivanna-purple);
+    width: clamp(320px, 35vw, 560px);
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+    padding: 24px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(150, 113, 218, 0.50) 100%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card::after {
+    content: 'Learn more →';
+    position: absolute;
+    bottom: -40px;
+    left: 25%;
+    transform: translateX(-50%);
+    font-family: var(--font-body);
+    font-size: var(--text-body-sm);
+    color: var(--light-ivanna-purple);
+    opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.card:hover::after {
+    bottom: 12px;
+    opacity: 1;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    /* gap: 17px; */
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.thumbnail {
+    width: clamp(120px, 50%, 230px);
+    height: auto;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: var(--text-display-sm);
+    color: var(--light-ivanna-purple);
+}
+
+
+.content p {
+    font-family: var(--font-body);
+    font-size: var(--text-body-sm);
+    color: var(--light-ivanna-purple);
+    padding: 0px 20px;
+}
+
+.technology {
+    display: flex;
+    align-self: start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech {
+    list-style: none;
+    color: var(--light-ivanna-purple);
+    background-color: var(--ivanna-purple);
+    text-align: center;
+    border-radius: 5px;
+    border: 1.5px solid var(--light-ivanna-purple);
+
+    font-family: var(--font-body);
+    font-size: var(--text-body-sm);
+    
+    padding: 7px;
+
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.3s ease-in-out;
+}
+
+.tech:hover {
+  background-color: var(--ivanna-purple);
+  box-shadow: 0 0 12px rgb(140, 110, 197);
+  transform: scale(1.05);
+}
