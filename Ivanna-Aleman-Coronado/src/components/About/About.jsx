@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react"
 import styles from "./About.module.css"
 import { skills } from "../../data/About"
 
+import { useSlideIn } from "../../hooks/useSlideIn";
 
 export const About = () => {
+    const ref = useSlideIn();
     return(
         <section id="about" className={`${styles.container} pixelDots`}>
-            <div className={styles.aboutText}>
+            <div ref={ref} className={`${styles.aboutText}`}>
                 <h1>About</h1>
                 <p>
                     I'm a computer science student at the University 

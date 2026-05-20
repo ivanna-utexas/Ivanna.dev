@@ -52,6 +52,7 @@
 
     .title {
         text-align: center;
+        font-size: var(--text-display-md);
     }
     .grid {
         display: flex;

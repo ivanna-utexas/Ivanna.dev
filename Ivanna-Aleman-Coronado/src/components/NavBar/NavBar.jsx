@@ -3,18 +3,10 @@ import styles from "./NavBar.module.css"
 
 import profile from '../../assets/NavBar/profile.svg'
 
-export const NavBar = () => {
+export const NavBar = ({ activeSection }) => {
     const[menuOpen, setMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState("");
     const [visible, setVisible] = useState(false);
     const links = ["about", "projects", "experience", "contact"];
-    
-    useEffect(() => {
-        // trigger entrance animation on load
-        const timer = setTimeout(() => setVisible(true), 100);
-        return () => clearTimeout(timer);
-    }, []);
-    
     return (
         <nav className={styles.nav}>
             <div className={styles.navInner}>
@@ -42,7 +34,6 @@ export const NavBar = () => {
                         className={`${styles.navLink} ${visible ? styles.navLinkVisible : ""} ${activeSection === link ? styles.active : ""}`}
                         onClick={() => {
                             setMenuOpen(false)
-                            setActiveSection(link);
                         }}
                     >
                         {link}

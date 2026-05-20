@@ -146,4 +146,10 @@
         padding: 10px;
     }
 
+    .category {
+        font-size: var(--text-display-sm);
+    }
+        
+    
+
 }
