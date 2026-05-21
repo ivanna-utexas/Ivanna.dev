@@ -99,3 +99,11 @@ html {
     opacity: 1;
     transform: translate(0);
 }
+
+span {
+  z-index: 0;
+}
+
+img {
+  z-index: 1;
+}

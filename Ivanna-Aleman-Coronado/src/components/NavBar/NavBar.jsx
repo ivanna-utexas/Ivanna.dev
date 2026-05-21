@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styles from "./NavBar.module.css"
 
-import profile from '../../assets/NavBar/profile.svg'
+import profile from '../../assets/NavBar/profile.png'
 
 export const NavBar = ({ activeSection }) => {
     const[menuOpen, setMenuOpen] = useState(false);

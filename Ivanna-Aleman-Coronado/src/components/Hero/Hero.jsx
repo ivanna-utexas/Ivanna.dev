@@ -36,6 +36,11 @@ export const Hero = () => {
                 </button>
             </div>
         </div>
+        <div className={styles.scrollIndicator}>
+            <span className={styles.scrollText}>scroll</span>
+            <div className={styles.arrow} />
+            <div className={styles.arrow} />
+        </div>
         </section>
     );
 }
