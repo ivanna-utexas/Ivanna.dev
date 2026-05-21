@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styles from "./Contact.module.css"
 
 import github from '../../assets/Contact/Github.svg'
-import linkedln from '../../assets/Contact/linkedln.svg'
+import linkedln from '../../assets/Contact/Linkedln.svg'
 
 
 export const Contact = () => {

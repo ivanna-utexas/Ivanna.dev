@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import styles from "./Projects.module.css";
-import { projects } from "../../data/projects.js";
+import { projects } from "../../data/Projects.js";
 import ProjectCard from "./ProjectCard";
 
 export const Projects = () => {
