@@ -24,6 +24,7 @@ export const Projects = () => {
     return(
         <section className={`${styles.container} pixelDots`} id="projects">
             <h1 className={styles.title}>Projects</h1>
+            <h2 className={styles.subtitle}>Click each card to learn more!</h2>
             <span className={`${styles.deco} ${styles.deco1}`}>✦</span>
             <span className={`${styles.deco} ${styles.deco2}`}>•</span>
             <div className={styles.grid}>

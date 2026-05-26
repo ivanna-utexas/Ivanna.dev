@@ -4,6 +4,21 @@ import BitBlastThumbnail from "../assets/Projects/BitBlastThumbnail.svg";
 import coAdaptiveThumbnail from "../assets/Projects/coAdaptiveThumbnail.png";
 
 export const projects = [
+        {
+        "id": "coAdaptiveAV",
+        "thumbnail": coAdaptiveThumbnail,
+        "title": "Co-Adaptive Value Alignment for Autonomous Vehicles",
+        "Focus": "We built a co-adaptive reinforcement learning framework that trains an autonomous vehicle agent to align its driving behavior with a simulated passenger's hidden comfort state — without requiring a real human in the loop.",
+        "Background": "Traditional AV systems optimize for speed and task completion but treat human preferences as static. Real passenger comfort is dynamic and shaped by the vehicle's own actions. Our framework closes this loop by using an LLM as a proxy human judge, scoring each driving episode and feeding that score back into the RL reward signal.",
+        "Description": "A reinforcement learning agent trained in Unity that adapts its driving behavior in real time to a simulated passenger's comfort state, scored episode-by-episode by a Qwen2.5 LLM.",
+        "Language": "Python",
+        "Technology": ["Unity", "PPO (Stable-Baselines3)", "Qwen2.5 LLM", "DonkeyCar", "TACC", "PyTorch"],
+        "PreviewType": "iFrame",
+        "PreviewSRC": "https://docs.google.com/presentation/d/1EbW1urK89alr9ngvP8vyQhW1FwTdVDgT/embed?start=true&loop=true&delayms=3000",
+        "FullScreen": "https://docs.google.com/presentation/d/e/2PACX-1vTiPSoUEc3WCis0AaytZx1MduCGma86ZbbIyo6-iCZyB73eixY5KLuu_Ph6iLNAEg/pub?start=false&loop=false&delayms=3000",
+        "src": "coAdaptiveAV",
+        "GitHub": "https://github.com/Spacewalker215/simulator"
+    },
     {
         "id": "bitblast",
         "thumbnail": BitBlastThumbnail,
@@ -24,7 +39,7 @@ export const projects = [
         "title": "Squirrel++",
         "Focus": "I wanted to create an educational Learn-To-Code style game that teaches programming concepts through a fun, squirrel-themed interface. My goal was to make it an experience that any age could enjoy and learn from. I was inspired by block-based programming platforms like Scratch and platform based games. I merged these two ideas to create an education game that introduced fundamental programming concepts.",
         "Background": "I developed an interactive, block-based programming game using Java and Java Swing that allows players to visually construct logic-driven programs to control a character in a 2D environment. The project features a custom command system with modular components such as movement commands, conditional logic (IF / ELSE), and game-state conditions (e.g., path detection), all executed through a runtime program interpreter. I designed a drag-and-drop UI using Swing components, layered panels, and custom rendering, including dynamically editable conditional blocks that update their behavior at runtime. The game integrates collision detection, state-based player movement, and level data evaluation to support real-time decision making. This project demonstrates my experience with object-oriented design, event-driven programming, UI/UX prototyping, and building educational tools that connect visual interfaces with underlying program logic.",
-        "Description": "An interactive block-based programming game where players help Otis the Squirrel navigate the 2D world.",
+        "Description": "An interactive block-based programming game built in Java with a custom drag-and-drop UI, runtime interpreter, and collision detection system.",
         "Language": "Java and Java Swing",
         "Technology": ["VSCode"],
         "PreviewType": "iFrame",
@@ -35,31 +50,16 @@ export const projects = [
     {
         "id": "starlingLab",
         "thumbnail": starlingLabThumbnail,
-        "title": "StARLinG Lab unsupervised Learning algorithms", 
+        "title": "StaRLiNG Lab Anomaly Detection Research", 
         "Focus": "We researched machine-learning-based anomaly detection for DDos attacks, comparing it to traditional signature-based intrusion detection systems (IDS). Our goal was to evaluate how well unsupervised ML Models can detect unknown (Zero-day) attacks that signature based systems might miss.",
         "Background": "Signature-based detection matches network packets to know attack signatures which is fast and accurate for known attacks but it cannot detect unknown threats. Our anomaly-based detection used machine learning to identify deviations from the normal traffic which means it can detect those unknown attacks.",
         "Description": "We built and tested three unsupervised anomaly-detection models on DDos traffic.",
         "Language": "Python",
-        "Technology": ["PyCharm"],
+        "Technology": ["Python", "PyCharm", "K-Means", "GMM", "One-Class SVM"],
         "PreviewType": "iFrame",
         "PreviewSRC": "https://docs.google.com/presentation/d/e/2PACX-1vSmj38O8gx9gPLR03Ql1E4td99reOfXpR4FQGydNXiHpmI6E5fqfLUEE-Zrhf0yofpKgwfWgYQuEulv/pubembed?start=true&loop=true&delayms=3000",
         "FullScreen": "https://docs.google.com/presentation/d/e/2PACX-1vSmj38O8gx9gPLR03Ql1E4td99reOfXpR4FQGydNXiHpmI6E5fqfLUEE-Zrhf0yofpKgwfWgYQuEulv/pub?start=false&loop=false&delayms=3000",
         "src": "starlingLab",
         "GitHub": "https://docs.google.com/presentation/d/e/2PACX-1vSmj38O8gx9gPLR03Ql1E4td99reOfXpR4FQGydNXiHpmI6E5fqfLUEE-Zrhf0yofpKgwfWgYQuEulv/pub?start=true&loop=true&delayms=3000&slide=id.g279d83b97fc_2_2638"
-    },
-    {
-        "id": "coAdaptiveAV",
-        "thumbnail": coAdaptiveThumbnail,
-        "title": "Co-Adaptive Value Alignment for Autonomous Vehicles",
-        "Focus": "We built a co-adaptive reinforcement learning framework that trains an autonomous vehicle agent to align its driving behavior with a simulated passenger's hidden comfort state — without requiring a real human in the loop.",
-        "Background": "Traditional AV systems optimize for speed and task completion but treat human preferences as static. Real passenger comfort is dynamic and shaped by the vehicle's own actions. Our framework closes this loop by using an LLM as a proxy human judge, scoring each driving episode and feeding that score back into the RL reward signal.",
-        "Description": "A reinforcement learning agent trained in Unity that adapts its driving behavior in real time to a simulated passenger's comfort state, scored episode-by-episode by a Qwen2.5 LLM.",
-        "Language": "Python",
-        "Technology": ["Unity", "PPO (Stable-Baselines3)", "Qwen2.5 LLM", "DonkeyCar", "TACC", "PyTorch"],
-        "PreviewType": "iFrame",
-        "PreviewSRC": "https://docs.google.com/presentation/d/1EbW1urK89alr9ngvP8vyQhW1FwTdVDgT/embed?start=true&loop=true&delayms=3000",
-        "FullScreen": "https://docs.google.com/presentation/d/e/2PACX-1vTiPSoUEc3WCis0AaytZx1MduCGma86ZbbIyo6-iCZyB73eixY5KLuu_Ph6iLNAEg/pub?start=false&loop=false&delayms=3000",
-        "src": "coAdaptiveAV",
-        "GitHub": "https://github.com/Spacewalker215/simulator"
     }
 ]

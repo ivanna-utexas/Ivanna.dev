@@ -1,14 +1,14 @@
 export const skills = [
   {
     category: "Skills",
-    items: ["Autonomous Robots", "Reinforcement Learning", "Anomaly Detection", "Web Development", "Game Development"]
+    items: ["Autonomous Vehicles", "Reinforcement Learning", "Imitation Learning", "Anomaly Detection", "Multi-sensor Fusion", "Perception & Planning", "Web Development", "Game Development", "Computer Vision"]
   },
   {
     category: "Languages",
-    items: ["C", "Javascript", "HTML/CSS", "Java", "AArch64 Assembly", "Swift"]
+    items: ["Python", "C", "C#", "JavaScript", "TypeScript", "HTML/CSS", "AArch64 Assembly", "SQL"]
   },
   {
     category: "Tools & Platforms",
-    items: ["Linux", "Unity", "Version Control", "FoxGlove", "ROS", "PyCharm", "JFrame/JPanel", "VS Code"]
+    items: ["Git", "GitHub", "Linux", "Unity", "Docker", "Podman", "AWS EC2", "TACC", "Netlify", "VS Code", "Figma", "FoxGlove"]
   }
 ]
