@@ -1,8 +1,31 @@
-import { useState, useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import styles from "./Experience.module.css";
 import { experienceData } from "../../data/Experience.js";
+
 export const Experience = () => {
+    const itemRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(styles.visible);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        itemRefs.current.forEach((el) => {
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
     return(
         <section className={`${styles.container} pixelDots`} id="experience">
             <h1 className={styles.title}>Experience</h1>
@@ -12,7 +35,11 @@ export const Experience = () => {
             <span className={`${styles.deco} ${styles.deco4}`}>→</span>
             <div className={styles.timeline}>
                 {experienceData.map((exp, i) => (
-                    <div key={i} className={styles.row}>
+                    <div 
+                        key={i} 
+                        ref={(el) => (itemRefs.current[i] = el)}
+                        className={`${styles.row} ${i % 2 === 0 ? styles.fromLeft : styles.fromRight}`}
+                    >
                         <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <circle cx="10" cy="10" r="10" fill="#9671DA" fillOpacity="0.3"/>
                             <circle cx="10" cy="10" r="4.5" fill="#9671DA" stroke="#6042AE"/>

@@ -7,12 +7,16 @@ import pixelArt from '../../assets/Hero/placeholderProfile.png'
 export const Hero = () => {
     return (
         <section id="hero" className={`${styles.container} pixelDots`}>
-
-        <img 
-            src={pixelArt}
-            alt="Pixel art of me!"
-            className={styles.heroImage}
-        />
+        <div className={styles.heroImageWrapper}>
+                <svg className={styles.border} xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="4" ry="4" className={styles.borderRect} />
+                </svg>
+            <img 
+                src={pixelArt}
+                alt="Pixel art of me!"
+                className={styles.heroImage}
+            />        
+        </div>   
 
         <div className={styles.heroText}>
             <h2>Hi, i'm</h2>

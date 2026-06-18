@@ -28,8 +28,8 @@ export const Projects = () => {
             <span className={`${styles.deco} ${styles.deco1}`}>✦</span>
             <span className={`${styles.deco} ${styles.deco2}`}>•</span>
             <div className={styles.grid}>
-                {projects.map((project) => (
-                    <ProjectCard key={project.id} project={project} />
+                {projects.map((project, i) => (
+                    <ProjectCard key={project.id} project={project} index={i} />
                 ))}
             </div>
         </section>

@@ -4,7 +4,7 @@ import BitBlastThumbnail from "../assets/Projects/BitBlastThumbnail.svg";
 import coAdaptiveThumbnail from "../assets/Projects/coAdaptiveThumbnail.png";
 
 export const projects = [
-        {
+    {
         "id": "coAdaptiveAV",
         "thumbnail": coAdaptiveThumbnail,
         "title": "Co-Adaptive Value Alignment for Autonomous Vehicles",
@@ -50,10 +50,10 @@ export const projects = [
     {
         "id": "starlingLab",
         "thumbnail": starlingLabThumbnail,
-        "title": "StaRLiNG Lab Anomaly Detection Research", 
-        "Focus": "We researched machine-learning-based anomaly detection for DDos attacks, comparing it to traditional signature-based intrusion detection systems (IDS). Our goal was to evaluate how well unsupervised ML Models can detect unknown (Zero-day) attacks that signature based systems might miss.",
-        "Background": "Signature-based detection matches network packets to know attack signatures which is fast and accurate for known attacks but it cannot detect unknown threats. Our anomaly-based detection used machine learning to identify deviations from the normal traffic which means it can detect those unknown attacks.",
-        "Description": "We built and tested three unsupervised anomaly-detection models on DDos traffic.",
+        "title": "StaRLiNG Lab Anomaly Detection Research",
+        "Focus": "We researched machine-learning-based anomaly detection for DDoS attacks, comparing it to traditional signature-based intrusion detection systems (IDS). Our goal was to evaluate how well unsupervised ML models can detect unknown (zero-day) attacks that signature-based systems might miss.",
+        "Background": "Signature-based detection matches network packets to known attack signatures which is fast and accurate for known attacks but it cannot detect unknown threats. Our anomaly-based detection used machine learning to identify deviations from normal traffic which means it can detect those unknown attacks.",
+        "Description": "We built and tested three unsupervised anomaly-detection models on DDoS traffic.",
         "Language": "Python",
         "Technology": ["Python", "PyCharm", "K-Means", "GMM", "One-Class SVM"],
         "PreviewType": "iFrame",
