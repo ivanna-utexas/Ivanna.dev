@@ -2,7 +2,7 @@ import starlingLabThumbnail from "../assets/Projects/StarlingLabThumbnail.png";
 import SquirrelThumbnail from "../assets/Projects/Squirrel++Thumbnail.png";
 import BitBlastThumbnail from "../assets/Projects/BitBlastThumbnail.svg";
 import coAdaptiveThumbnail from "../assets/Projects/coAdaptiveThumbnail.png";
-import spotDancingQueenThumbnail from "../assets/Projects/SpotThumbnail.png";
+import spotDancingQueenThumbnail from "../assets/Projects/SpotThumbnail.PNG";
 
 
 export const projects = [
