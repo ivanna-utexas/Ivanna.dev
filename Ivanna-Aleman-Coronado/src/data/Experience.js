@@ -28,14 +28,14 @@ export const experienceData = [
         "role": "Autonomous Vehicle Research Fellow",
         "company": "UT Austin AMRL — Freshman Research Initiative",
         "information": [
-            "Conducting perception and planning research on 1/10th and 1/5th scale autonomous vehicles",
-            "Developing multi-sensor fusion pipelines using camera, LiDAR, and IMU data for entity detection",
-            "Implementing localization, mapping, and decision-making algorithms in dynamic multi-agent environments",
-            "Training imitation learning and PPO reinforcement learning policies on physical robotic platforms"
+            "Built a full ROS2 choreography pipeline for a Boston Dynamics Spot quadruped, combining audio beat analysis, a custom motion library, and both body-pose and real locomotion-based control into a hardcoded, music-synchronized dance routine",
+            "Root-caused and fixed non-obvious robot control bugs by tracing behavior into Spot's driver/SDK source, including a control-loop deadlock and a body-pose command that silently failed to actuate",
+            "Debugged and resolved hardware-level issues spanning USB/Bluetooth device drivers, Docker device passthrough, and audio system configuration to get the demo running reliably on the robot's onboard compute",
+            "Demo is now actively used in lab presentations to showcase Spot's capabilities"
         ], 
         "date": "JAN 2025 – PRESENT",
         "location": "Austin, TX",
-        "paragraph": "Conducting autonomous vehicle research at UT Austin's Autonomous Mobile Robotics Lab under Dr. Nathan Tsoi. Building perception, planning, and control systems for scaled AV platforms using multi-sensor fusion and reinforcement learning.",
-        "skills": ["Python", "ROS2", "LiDAR", "IMU", "Multi-sensor Fusion", "Computer Vision", "Reinforcement Learning", "Imitation Learning", "Linux", "FoxGlove"]
+        "paragraph": "Conducting autonomous vehicle research at UT Austin's Autonomous Mobile Robotics Lab under Dr. Nathan Tsoi. Building perception, planning, and control systems for scaled AV platforms using multi-sensor fusion and reinforcement learning, as well as a full robot choreography and control pipeline for Boston Dynamics' Spot.",
+        "skills": ["Python", "ROS2", "LiDAR", "IMU", "Multi-sensor Fusion", "Computer Vision", "Reinforcement Learning", "Imitation Learning", "Linux", "FoxGlove", "Boston Dynamics Spot SDK", "Docker", "librosa", "Git"]
     }
 ]

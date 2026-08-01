@@ -9,6 +9,6 @@ export const skills = [
   },
   {
     category: "Tools & Platforms",
-    items: ["Git", "GitHub", "Linux", "Unity", "Docker", "Podman", "AWS EC2", "TACC", "Netlify", "VS Code", "Figma", "FoxGlove"]
+    items: ["Git", "GitHub", "Linux", "Unity", "Docker", "TACC", "Netlify", "VS Code", "Figma", "FoxGlove", "ROS2", "Boston Dynamics Spot SDK", "librosa", "Linux"]
   }
 ]

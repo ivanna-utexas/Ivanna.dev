@@ -56,6 +56,8 @@ export default function ProjectPopup({ project, onClose }) {
                                 <p>{project.Background}</p>
                                 <h2>Focus</h2>
                                 <p>{project.Focus}</p>
+                                <h2>Description</h2>
+                                <p>{project.Description}</p>
                             </div>
                     </div>
                 </div>

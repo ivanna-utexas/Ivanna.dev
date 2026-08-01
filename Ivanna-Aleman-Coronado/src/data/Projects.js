@@ -2,8 +2,25 @@ import starlingLabThumbnail from "../assets/Projects/StarlingLabThumbnail.png";
 import SquirrelThumbnail from "../assets/Projects/Squirrel++Thumbnail.png";
 import BitBlastThumbnail from "../assets/Projects/BitBlastThumbnail.svg";
 import coAdaptiveThumbnail from "../assets/Projects/coAdaptiveThumbnail.png";
+import spotDancingQueenThumbnail from "../assets/Projects/SpotThumbnail.png";
+
 
 export const projects = [
+    {
+        "id": "spotDancingQueen",
+        "thumbnail": spotDancingQueenThumbnail, 
+        "title": "Spot Dancing Queen: Choreographed Robot Dance Demo",
+        "Focus": "I built a fully hardcoded choreography pipeline for Boston Dynamics' Spot, synchronizing a scripted dance routine to ABBA's 'Dancing Queen' using real-time audio analysis, a custom move library, and both body-pose and true locomotion-based motion.",
+        "Background": "Built as part of an AMRL summer research fellowship, this project needed to demonstrate Spot performing dramatic, camera-ready choreography rather than subtle test motions. It combines beat-accurate audio analysis with two distinct robot control paths — body-pose tilting and real walking gaits — unified into a single scripted sequencer. The demo is now actively used in lab presentations to showcase Spot's capabilities.",
+        "Description": "A ROS2-based dance sequencer that syncs Spot's motion to music via a beat-mapped timeline, combining body-pose moves and real cmd_vel-driven locomotion (including gait selection) into one hardcoded, audio-synchronized routine.",
+        "Language": "Python",
+        "Technology": ["ROS2", "Boston Dynamics Spot SDK", "librosa", "Docker", "ALSA"],
+        "PreviewType": "iFrame", 
+        "PreviewSRC": "https://www.youtube.com/embed/0YGq1Z0vCtI",
+        "FullScreen": "https://youtube.com/shorts/0YGq1Z0vCtI?si=ahzSbPxJKqzoAxNV", 
+        "src": "spotDancingQueen",
+        "GitHub": "https://github.com/ivanna-utexas/spot_dancing_queen_demo"
+    },
     {
         "id": "coAdaptiveAV",
         "thumbnail": coAdaptiveThumbnail,
@@ -15,7 +32,7 @@ export const projects = [
         "Technology": ["Unity", "PPO (Stable-Baselines3)", "Qwen2.5 LLM", "DonkeyCar", "TACC", "PyTorch"],
         "PreviewType": "iFrame",
         "PreviewSRC": "https://docs.google.com/presentation/d/1EbW1urK89alr9ngvP8vyQhW1FwTdVDgT/embed?start=true&loop=true&delayms=3000",
-        "FullScreen": "https://docs.google.com/presentation/d/e/2PACX-1vTiPSoUEc3WCis0AaytZx1MduCGma86ZbbIyo6-iCZyB73eixY5KLuu_Ph6iLNAEg/pub?start=false&loop=false&delayms=3000",
+        "FullScreen": "https://youtu.be/oiDhOi8Kqy0?si=G12AE83Vu9mXji2g",
         "src": "coAdaptiveAV",
         "GitHub": "https://github.com/Spacewalker215/simulator"
     },
