@@ -22,18 +22,25 @@ export const Contact = () => {
                 <div className={styles.contactText}>
                     <h1>Contact me!</h1>
                     <p>
-                        I'm currently open to new opportunities. Whether you have a project in mind, a question, or just want to say hi — my inbox is always open.
+                        I'm currently open to Software Engineering and robotics internships for Summer 2027. Whether you have a role in mind, a question about my work, or just want 
+                        to say hi — my inbox is always open.
                     </p>
                 </div>
-                <button onClick={(e) => {
-              e.preventDefault();
-              copyToClipboard();
-                }}>
-                        Copy my email
-                </button>
-                {showCopied && (
-                <div className={styles.copiedToast}>✓ Copied to clipboard!</div>
-                )}
+                <div className={styles.buttons}>
+                    <button onClick={(e) => {
+                        e.preventDefault();
+                        copyToClipboard();
+                        }}>
+                                Copy my email
+                        </button>
+                        {showCopied && (
+                        <div className={styles.copiedToast}>✓ Copied to clipboard!</div>
+                        )}
+                    <button onClick={() => window.open('/Ivanna-Aleman-Coronado-Resume.pdf', '_blank')}>
+                        Download my resume
+                    </button>
+                </div>
+                
                 <div className={styles.links}>
                     <a href="https://github.com/ivanna-utexas" target="_blank" rel="noreferrer" className={styles.link}>
                         <svg className={styles.border} xmlns="http://www.w3.org/2000/svg">
