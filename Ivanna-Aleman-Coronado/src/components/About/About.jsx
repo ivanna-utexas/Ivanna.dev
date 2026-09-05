@@ -25,7 +25,7 @@ export const About = () => {
                 <p>I'm passionate about robotics, machine learning, and building 
                     software that works reliably in the real world. As an undergraduate 
                     researcher at UT's Autonomous Mobile Robotics Lab (AMRL), I built a 
-                    full ROS 2 pipeline for a Boston Dynamics Spot choreography system — 
+                    full ROS 2 pipeline for a Boston Dynamics Spot choreography system:
                     handling beat detection, a custom move library, and audio/motion sync, 
                     with driver-level debugging on a Jetson Orin. I've also worked on 
                     reinforcement learning for autonomous vehicles, training PPO agents 
