@@ -23,7 +23,7 @@ export const Contact = () => {
                     <h1>Contact me!</h1>
                     <p>
                         I'm currently open to Software Engineering and robotics internships for Summer 2027. Whether you have a role in mind, a question about my work, or just want 
-                        to say hi — my inbox is always open.
+                        to say hi, my inbox is always open!
                     </p>
                 </div>
                 <div className={styles.buttons}>

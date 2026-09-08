@@ -22,20 +22,11 @@ export const About = () => {
                 <span className={`${styles.deco} ${styles.deco4}`}>✦</span>
 
 
-                <p>I'm passionate about robotics, machine learning, and building 
-                    software that works reliably in the real world. As an undergraduate 
-                    researcher at UT's Autonomous Mobile Robotics Lab (AMRL), I built a 
-                    full ROS 2 pipeline for a Boston Dynamics Spot choreography system:
-                    handling beat detection, a custom move library, and audio/motion sync, 
-                    with driver-level debugging on a Jetson Orin. I've also worked on 
-                    reinforcement learning for autonomous vehicles, training PPO agents 
-                    in Unity with LLM-based reward scoring on TACC's HPC cluster, and 
-                    developed anomaly-based ML models for cybersecurity at UT Dallas' 
-                    StaRLiNG Lab. My coursework has taken me down to the systems level 
-                    too, from writing a pipelined AArch64 processor emulator to building 
-                    a cache simulator from scratch. I'm looking for SWE and robotics 
-                    internships where I can bring that range — from low-level systems 
-                    work to applied ML — to real engineering problems.
+                <p>
+                    I'm passionate about robotics, machine learning, and building software that works reliably in the real world. As an undergraduate researcher at UT's Autonomous Mobile Robotics Lab (AMRL),
+                     I built a full ROS 2 pipeline for a Boston Dynamics Spot choreography system: handling beat detection, a custom move library, and audio/motion sync, with driver-level debugging on a Jetson Orin. 
+                     My coursework has taken me down to the systems level, from writing a pipelined AArch64 processor emulator to building a cache simulator from scratch. I'm looking for SWE and robotics internships 
+                     where I can bring anything from low-level systems work to applied ML to real engineering problems.
                 </p>
             </div>
             <div className={styles.aboutBubbles}>
