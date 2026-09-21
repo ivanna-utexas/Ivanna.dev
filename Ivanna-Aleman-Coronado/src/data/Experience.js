@@ -19,7 +19,7 @@ export const experienceData = [
             "Achieved strong accuracy, recall, and precision — improving detection of zero-day threats over baseline",
             "Presented findings to a panel of UTD faculty and industry staff"
         ], 
-        "date": "MAY – AUG 2024",
+        "date": "MAY – AUG 2025",
         "location": "Dallas, TX",
         "paragraph": "Collaborated with fellow interns to build anomaly-based ML models that outperformed traditional signature-based DDoS detection. Our results showed meaningful improvements in zero-day threat detection across accuracy, recall, and precision.",
         "skills": ["Python", "Machine Learning", "K-Means Clustering", "Gaussian Mixture Models", "Anomaly Detection", "Research"]
