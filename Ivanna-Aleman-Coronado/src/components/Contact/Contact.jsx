@@ -61,10 +61,9 @@ export const Contact = () => {
             <hr className={styles.divider} />
             <div className={styles.credits}>
                 <p>
-                    built by Ivanna Aleman-Coronado :) <br />
-                    Art commisioned by Zypxel<br />
-                    2026
+                    Made with love, Ivanna Aleman-Coronado :)
                 </p>
+                <a href="https://www.etsy.com/shop/Zypxel?msockid=1c0f99c1dd846a6901538ee8dc216b70">Art commissioed by Zypxel</a>
             </div>
         </section>
     );

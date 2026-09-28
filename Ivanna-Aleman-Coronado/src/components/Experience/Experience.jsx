@@ -48,7 +48,11 @@ export const Experience = () => {
                             <div className={styles.experience}>
                                 <h2>{exp.date}</h2>
                                 <h1>{exp.role}</h1>
-                                <h3>{exp.location}</h3>
+                                <h3>
+                                    {exp.company}
+                                    <span style={{ margin: "0 0.5rem", opacity: 0.5 }}>|</span>
+                                    {exp.location}
+                                </h3>
                                 <ul className={styles.bullets}>
                                     {exp.information.map((info, j) => (
                                         <li key={j}>{info}</li>
