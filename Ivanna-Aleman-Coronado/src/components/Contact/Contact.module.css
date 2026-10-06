@@ -185,3 +185,11 @@ position: fixed;
     opacity: 0;
   }
 }
+
+@media (max-width: 1000px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
